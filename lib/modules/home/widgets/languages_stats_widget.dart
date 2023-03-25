@@ -10,7 +10,7 @@ class LanguagesStatsWidget extends StatelessWidget {
     final resp = ResponsiveUtil.of(context);
     final styles = TextStyles.of(context);
     return Container(
-      height: resp.hp(30),
+      height: 400,
       color: Colors.black,
       alignment: Alignment.center,
       child: const Text('Stats', style: TextStyle(color: Colors.white)),

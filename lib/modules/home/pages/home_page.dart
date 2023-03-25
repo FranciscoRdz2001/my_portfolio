@@ -15,9 +15,13 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: const [
             HeaderWidget(),
+            SizedBox(height: 20),
             BodyWidget(),
+            SizedBox(height: 20),
             AboutMeWidget(),
+            SizedBox(height: 20),
             LanguagesStatsWidget(),
+            SizedBox(height: 20),
             ProjectsWidget(),
           ],
         ),

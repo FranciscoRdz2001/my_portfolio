@@ -9,7 +9,7 @@ class ProjectsWidget extends StatelessWidget {
     final resp = ResponsiveUtil.of(context);
     return Container(
       color: Colors.indigo,
-      height: resp.hp(70),
+      height: 700,
       alignment: Alignment.topCenter,
       child: const Text(
         'Projects',
