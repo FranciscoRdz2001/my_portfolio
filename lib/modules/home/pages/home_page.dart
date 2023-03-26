@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/modules/home/widgets/about_me_widget.dart';
 import 'package:my_portfolio/modules/home/widgets/body_widget.dart';
+import 'package:my_portfolio/modules/home/widgets/experience_widget.dart';
 import 'package:my_portfolio/modules/home/widgets/header_widget.dart';
 import 'package:my_portfolio/modules/home/widgets/languages_stats_widget.dart';
 import 'package:my_portfolio/modules/home/widgets/projects_widget.dart';
@@ -12,18 +13,24 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: const [
-            HeaderWidget(),
-            SizedBox(height: 20),
-            BodyWidget(),
-            SizedBox(height: 20),
-            AboutMeWidget(),
-            SizedBox(height: 20),
-            LanguagesStatsWidget(),
-            SizedBox(height: 20),
-            ProjectsWidget(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 50),
+          child: Column(
+            children: const [
+              SizedBox(height: 50),
+              HeaderWidget(),
+              SizedBox(height: 50),
+              BodyWidget(),
+              SizedBox(height: 100),
+              AboutMeWidget(),
+              SizedBox(height: 100),
+              LanguagesStatsWidget(),
+              SizedBox(height: 100),
+              ExperienceWidget(),
+              SizedBox(height: 100),
+              ProjectsWidget(),
+            ],
+          ),
         ),
       ),
     );

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:my_portfolio/app/theme/app_theme.dart';
 import 'package:my_portfolio/modules/home/pages/home_page.dart';
 
 void main() => runApp(const MyApp());
@@ -8,10 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'My Portfolio',
-      home: HomePage(),
+      theme: AppCustomTheme.darkMode,
+      home: const HomePage(),
     );
   }
 }
