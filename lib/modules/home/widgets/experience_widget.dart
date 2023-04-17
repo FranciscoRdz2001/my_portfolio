@@ -76,12 +76,16 @@ class ExperienceWidget extends StatelessWidget {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Text('Work Name',
-                                                  style: styles.w400(18)),
+                                              Text(
+                                                'Work Name',
+                                                style: styles.w400(18),
+                                              ),
                                               Text(
                                                 'Enterprise name',
                                                 style: styles.w400(
-                                                    16, lightGreyColor),
+                                                  16,
+                                                  lightGreyColor,
+                                                ),
                                               ),
                                               const SizedBox(height: 5),
                                               Text(

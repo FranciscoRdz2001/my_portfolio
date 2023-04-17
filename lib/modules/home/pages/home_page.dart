@@ -5,6 +5,7 @@ import 'package:my_portfolio/modules/home/widgets/experience_widget.dart';
 import 'package:my_portfolio/modules/home/widgets/header_widget.dart';
 import 'package:my_portfolio/modules/home/widgets/languages_stats_widget.dart';
 import 'package:my_portfolio/modules/home/widgets/projects_widget.dart';
+import 'package:my_portfolio/widgets/made_with_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,6 +30,9 @@ class HomePage extends StatelessWidget {
               ExperienceWidget(),
               SizedBox(height: 100),
               ProjectsWidget(),
+              SizedBox(height: 50),
+              MadeWithWidget(),
+              SizedBox(height: 50),
             ],
           ),
         ),

@@ -25,7 +25,7 @@ class AnimatedVerticalDividerWidget extends StatelessWidget {
           height: value,
           width: 2.5,
           decoration: BoxDecoration(
-            color: lightGreyColor,
+            color: greyColor,
             borderRadius: BorderRadius.circular(100),
           ),
         );
