@@ -26,10 +26,10 @@ class CircleProgressLabelWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 10),
-        Flexible(
+        Expanded(
           child: Text(
             label,
-            style: styles.w400(18, lightGreyColor),
+            style: styles.w400(14, lightGreyColor),
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),

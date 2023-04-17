@@ -34,70 +34,129 @@ class AboutMeWidget extends StatelessWidget {
           ],
         ),
         largeDeviceWidget: Row(
+          mainAxisSize: MainAxisSize.max,
           children: [
-            Expanded(
-              child: Container(
-                color: darkContColor,
-              ),
+            ClipOval(
+              child: Image.asset('assets/images/CV.png'),
             ),
             SizedBox(width: resp.wp(10)),
             Expanded(
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 300),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const TitleChipWidget(title: 'About me'),
-                    SizedBox(height: resp.hp(2.5)),
-                    Row(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const TitleChipWidget(title: 'About me'),
+                  SizedBox(height: resp.hp(2.5)),
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 700),
+                    child: Row(
                       key: rowKey,
                       children: [
                         const SizedBox(width: 60),
                         AnimatedVerticalDividerWidget(parentKey: rowKey),
                         SizedBox(width: resp.wp(2.5)),
-                        Expanded(
-                          child: RichText(
-                            overflow: TextOverflow.ellipsis,
-                            maxLines: 5,
-                            text: TextSpan(
-                              text:
-                                  "I am a student of the 8th semester of the career computer systems engineering focused on ",
-                              style: styles.w400(18, lightGreyColor),
-                              children: [
-                                TextSpan(
-                                  text: 'mobile development ',
-                                  style: styles.w500(18, accentColor),
+                        Flexible(
+                          child: Column(
+                            children: [
+                              RichText(
+                                overflow: TextOverflow.visible,
+                                maxLines: 5,
+                                text: TextSpan(
+                                  text:
+                                      "I am a student of the 8th semester of the career computer systems engineering focused on ",
+                                  style: styles.w400(16, lightGreyColor),
+                                  children: [
+                                    TextSpan(
+                                      text: 'mobile development ',
+                                      style: styles.w500(16, accentColor),
+                                    ),
+                                    TextSpan(
+                                      text: 'for more 3 years old with the',
+                                      style: styles.w400(16, lightGreyColor),
+                                    ),
+                                    TextSpan(
+                                      text: ' Dart',
+                                      style: styles.w500(
+                                        16,
+                                        const Color(0xff00b6aa),
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: ' programming language and the ',
+                                      style: styles.w400(16, lightGreyColor),
+                                    ),
+                                    TextSpan(
+                                      text: 'Flutter ',
+                                      style: styles.w500(16, Colors.blue),
+                                    ),
+                                    TextSpan(
+                                      text: 'framework.',
+                                      style: styles.w400(16, lightGreyColor),
+                                    )
+                                  ],
                                 ),
-                                TextSpan(
-                                  text: 'for more 3 years old with the',
-                                  style: styles.w400(18, lightGreyColor),
-                                ),
-                                TextSpan(
-                                  text: ' Dart',
-                                  style:
-                                      styles.w500(18, const Color(0xff00b6aa)),
-                                ),
-                                TextSpan(
-                                  text: ' programming language and the ',
-                                  style: styles.w400(18, lightGreyColor),
-                                ),
-                                TextSpan(
-                                  text: 'Flutter ',
-                                  style: styles.w500(18, Colors.blue),
-                                ),
-                                TextSpan(
-                                  text: 'framework.',
-                                  style: styles.w400(18, lightGreyColor),
-                                )
-                              ],
-                            ),
+                              ),
+                              const SizedBox(height: 20),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    'assets/images/icons/mail.png',
+                                    height: 30,
+                                    width: 30,
+                                    color: darkContChildColor,
+                                  ),
+                                  const SizedBox(width: 15),
+                                  Expanded(
+                                    child: Text(
+                                      'franciscojrdzrdz@gmail.com',
+                                      style: styles.w400(14, lightGreyColor),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 15),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    'assets/images/icons/github.png',
+                                    height: 30,
+                                    width: 30,
+                                    color: darkContChildColor,
+                                  ),
+                                  const SizedBox(width: 15),
+                                  Expanded(
+                                    child: Text(
+                                      '@FranciscoRdz2001',
+                                      style: styles.w400(14, lightGreyColor),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 15),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    'assets/images/icons/linkedin.png',
+                                    height: 30,
+                                    width: 30,
+                                    color: darkContChildColor,
+                                  ),
+                                  const SizedBox(width: 15),
+                                  Expanded(
+                                    child: Text(
+                                      '@frankrdz2001',
+                                      style: styles.w400(14, lightGreyColor),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ),
                       ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ],

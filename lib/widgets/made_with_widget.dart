@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/app/constants/colors_constants.dart';
 
 import '../app/utils/text_styles_util.dart';
 
@@ -11,11 +12,10 @@ class MadeWithWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text('Made with', style: styles.w400(18)),
-        const SizedBox(width: 10),
         const FlutterLogo(size: 20),
         const SizedBox(width: 10),
-        Text('Flutter', style: styles.w500(18)),
+        Text('Made with', style: styles.w400(14, greyColor)),
+        Text(' Flutter', style: styles.w500(14, lightGreyColor)),
       ],
     );
   }

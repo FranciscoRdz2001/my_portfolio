@@ -77,8 +77,8 @@ class ExperienceWidget extends StatelessWidget {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                'Work Name',
-                                                style: styles.w400(18),
+                                                'Flutter Developer',
+                                                style: styles.w500(18),
                                               ),
                                               Text(
                                                 'Enterprise name',
@@ -87,12 +87,41 @@ class ExperienceWidget extends StatelessWidget {
                                                   lightGreyColor,
                                                 ),
                                               ),
-                                              const SizedBox(height: 5),
+                                              const SizedBox(height: 10),
                                               Text(
                                                 'Details ' * 5,
                                                 style: styles.w400(
-                                                    16, lightGreyColor),
+                                                  14,
+                                                  lightGreyColor,
+                                                ),
                                               ),
+                                              const SizedBox(height: 10),
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.end,
+                                                children: [
+                                                  Container(
+                                                    alignment: Alignment.center,
+                                                    padding: const EdgeInsets
+                                                            .symmetric(
+                                                        horizontal: 10,
+                                                        vertical: 9),
+                                                    decoration: BoxDecoration(
+                                                      color: darkContColor,
+                                                      border: Border.all(
+                                                          color: darkAccent),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              10),
+                                                    ),
+                                                    child: Text(
+                                                      'View details',
+                                                      style: styles.w400(
+                                                          12, lightGreyColor),
+                                                    ),
+                                                  ),
+                                                ],
+                                              )
                                             ],
                                           ),
                                         )
